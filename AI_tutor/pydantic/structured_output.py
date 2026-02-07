@@ -9,8 +9,8 @@ class Clima(BaseModel):
 
 # 🔹 Paso 2: Simular respuesta del modelo (JSON)
 respuesta_modelo = {
-    #"temperatura": 20.0,
-    "temperatura": "calor",
+    "temperatura": 20.0,
+    #"temperatura": "calor", # el error es que la temperatura debe ser un float
     "humedad": 50
     }
 
@@ -18,4 +18,5 @@ respuesta_modelo = {
 clima = Clima(**respuesta_modelo)
 print(clima)
 
+print(respuesta_modelo)
 
